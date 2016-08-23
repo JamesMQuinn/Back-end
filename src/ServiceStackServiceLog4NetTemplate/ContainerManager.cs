@@ -1,8 +1,8 @@
 ﻿using Funq;
 using ServiceStack.Validation;
-using ServiceStackServiceTemplate.Validation;
+using ServiceStackServiceLog4NetTemplate.Validation;
 
-namespace ServiceStackServiceTemplate
+namespace ServiceStackServiceLog4NetTemplate
 {
     public static class ContainerManager
     {

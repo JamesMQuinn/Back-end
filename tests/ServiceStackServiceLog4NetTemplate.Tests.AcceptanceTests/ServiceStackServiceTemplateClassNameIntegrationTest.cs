@@ -6,10 +6,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ServiceStackServiceTemplate.Tests.IntegrationTests
+namespace ServiceStackServiceLog4NetTemplate.Tests.IntegrationTests
 {
     [TestClass]
-    public class ServiceStackServiceTemplateClassNameIntegrationTest
+    public class ServiceStackServiceLog4NetTemplateClassNameIntegrationTest
     {
         [TestInitialize]
         public void InitializeTestData()

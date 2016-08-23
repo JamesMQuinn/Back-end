@@ -1,6 +1,6 @@
 using System.Reflection;
 
-namespace ServiceStackServiceTemplate.ServiceDefinition
+namespace ServiceStackServiceLog4NetTemplate.ServiceDefinition
 {
     public static class ServiceDefinitionInfo
     {

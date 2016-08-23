@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ServiceStack.Text;
 
-namespace ServiceStackServiceTemplate.Tests.UnitTests
+namespace ServiceStackServiceLog4NetTemplate.Tests.UnitTests
 {
     [TestClass]
     public class AppHostShould

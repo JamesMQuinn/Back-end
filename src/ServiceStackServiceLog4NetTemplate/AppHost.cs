@@ -3,10 +3,10 @@ using ServiceStack;
 using ServiceStack.Api.Swagger;
 using ServiceStack.Text;
 using ServiceStack.Validation;
-using ServiceStackServiceTemplate.ServiceDefinition;
-using ServiceStackServiceTemplate.Validation;
+using ServiceStackServiceLog4NetTemplate.ServiceDefinition;
+using ServiceStackServiceLog4NetTemplate.Validation;
 
-namespace ServiceStackServiceTemplate
+namespace ServiceStackServiceLog4NetTemplate
 {
     public class AppHost : AppHostBase
     {

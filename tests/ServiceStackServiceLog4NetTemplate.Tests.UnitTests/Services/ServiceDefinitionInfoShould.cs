@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ServiceStackServiceTemplate.ServiceDefinition;
+using ServiceStackServiceLog4NetTemplate.ServiceDefinition;
 
-namespace ServiceStackServiceTemplate.Tests.UnitTests.Services
+namespace ServiceStackServiceLog4NetTemplate.Tests.UnitTests.Services
 {
     [TestClass]
     public class ServiceDefinitionInfoShould

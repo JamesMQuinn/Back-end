@@ -1,6 +1,6 @@
 using System;
 
-namespace ServiceStackServiceTemplate
+namespace ServiceStackServiceLog4NetTemplate
 {
     public class Global : System.Web.HttpApplication
     {
