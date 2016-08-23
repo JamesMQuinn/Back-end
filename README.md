@@ -1,0 +1,1 @@
+# ServiceStackServiceLog4NetTemplate
