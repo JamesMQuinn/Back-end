@@ -65,12 +65,12 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FluentAssertions, Version=4.4.0.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
-      <HintPath>..\..\src\packages\FluentAssertions.4.4.0\lib\net45\FluentAssertions.dll</HintPath>
+    <Reference Include="FluentAssertions, Version=4.13.0.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
+      <HintPath>..\..\src\packages\FluentAssertions.4.13.0\lib\net45\FluentAssertions.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="FluentAssertions.Core, Version=4.4.0.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
-      <HintPath>..\..\src\packages\FluentAssertions.4.4.0\lib\net45\FluentAssertions.Core.dll</HintPath>
+    <Reference Include="FluentAssertions.Core, Version=4.13.0.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
+      <HintPath>..\..\src\packages\FluentAssertions.4.13.0\lib\net45\FluentAssertions.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ServiceStack, Version=4.0.62.0, Culture=neutral, processorArchitecture=MSIL">
@@ -122,9 +122,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\ServiceStackServiceTemplate.ServiceModel\ServiceStackServiceTemplate.ServiceModel.csproj">
+    <ProjectReference Include="..\..\src\ServiceStackServiceTemplate.ServiceModel\ServiceStackServiceLog4NetTemplate.ServiceModel.csproj">
       <Project>{53e82ac1-dd1d-4c66-b55f-f9f4acfb2f40}</Project>
-      <Name>ServiceStackServiceTemplate.ServiceModel</Name>
+      <Name>ServiceStackServiceLog4NetTemplate.ServiceModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

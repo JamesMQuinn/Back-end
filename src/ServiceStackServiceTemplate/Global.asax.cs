@@ -8,10 +8,10 @@ namespace ServiceStackServiceTemplate
         {
             // More information on Log4Net logging can be found here: http://wiki/dokuwiki/doku.php?id=arch:log4net_setup
             
-            //set ServiceStack's LogFactory
+            // Set ServiceStack's LogFactory
             ServiceStack.Logging.LogManager.LogFactory = new ServiceStack.Logging.Log4Net.Log4NetFactory();
             
-            //set our LogFactory
+            // Set our LogFactory
             CHRobinson.Enterprise.Logging.LogManager.LogFactory = new CHRobinson.Enterprise.Logging.Log4Net.Log4NetFactory(true);
             
             log4net.GlobalContext.Properties["AppName"] = "ServiceStackServiceLog4NetTemplate";

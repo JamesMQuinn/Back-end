@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{756CB3D8-0029-4E34-9DB3-7259C71A6321}</ProjectGuid>
+    <ProjectGuid>{E1C674EA-F8EA-444C-9CE8-D288E9051355}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ServiceStackServiceTemplate.Interfaces</RootNamespace>
-    <AssemblyName>ServiceStackServiceTemplate.Interfaces</AssemblyName>
+    <RootNamespace>ServiceStackServiceTemplate.Managers</RootNamespace>
+    <AssemblyName>ServiceStackServiceTemplate.Managers</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -73,14 +73,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ServiceStackServiceTemplate.ServiceModel\ServiceStackServiceTemplate.ServiceModel.csproj">
-      <Project>{53e82ac1-dd1d-4c66-b55f-f9f4acfb2f40}</Project>
-      <Name>ServiceStackServiceTemplate.ServiceModel</Name>
+    <ProjectReference Include="..\ServiceStackServiceTemplate.Interfaces\ServiceStackServiceLog4NetTemplate.Interfaces.csproj">
+      <Project>{756cb3d8-0029-4e34-9db3-7259c71a6321}</Project>
+      <Name>ServiceStackServiceLog4NetTemplate.Interfaces</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Managers\" />
-    <Folder Include="Repositories\" />
+    <ProjectReference Include="..\ServiceStackServiceTemplate.ServiceModel\ServiceStackServiceLog4NetTemplate.ServiceModel.csproj">
+      <Project>{53e82ac1-dd1d-4c66-b55f-f9f4acfb2f40}</Project>
+      <Name>ServiceStackServiceLog4NetTemplate.ServiceModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

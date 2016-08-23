@@ -73,13 +73,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ServiceStackServiceTemplate.Interfaces\ServiceStackServiceTemplate.Interfaces.csproj">
+    <ProjectReference Include="..\ServiceStackServiceTemplate.Interfaces\ServiceStackServiceLog4NetTemplate.Interfaces.csproj">
       <Project>{756cb3d8-0029-4e34-9db3-7259c71a6321}</Project>
-      <Name>ServiceStackServiceTemplate.Interfaces</Name>
+      <Name>ServiceStackServiceLog4NetTemplate.Interfaces</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ServiceStackServiceTemplate.ServiceModel\ServiceStackServiceTemplate.ServiceModel.csproj">
+    <ProjectReference Include="..\ServiceStackServiceTemplate.ServiceModel\ServiceStackServiceLog4NetTemplate.ServiceModel.csproj">
       <Project>{53e82ac1-dd1d-4c66-b55f-f9f4acfb2f40}</Project>
-      <Name>ServiceStackServiceTemplate.ServiceModel</Name>
+      <Name>ServiceStackServiceLog4NetTemplate.ServiceModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -51,40 +51,12 @@
       <HintPath>..\packages\CHRobinson.Enterprise.Logging.Log4Net.1.1.15231.203\lib\net45\CHRobinson.Enterprise.Logging.Log4Net.Net45.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="log4net, Version=1.2.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\packages\log4net.2.0.4\lib\net45-full\log4net.dll</HintPath>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="log4net.ElasticSearch, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\log4net.ElasticSearch.2.1.2\lib\net45\log4net.ElasticSearch.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+    <Reference Include="log4net.ElasticSearch, Version=2.3.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.ElasticSearch.2.3.3\lib\net45\log4net.ElasticSearch.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
@@ -134,35 +106,33 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ServiceStackServiceTemplate.Interfaces\ServiceStackServiceTemplate.Interfaces.csproj">
+    <ProjectReference Include="..\ServiceStackServiceTemplate.Interfaces\ServiceStackServiceLog4NetTemplate.Interfaces.csproj">
       <Project>{756cb3d8-0029-4e34-9db3-7259c71a6321}</Project>
-      <Name>ServiceStackServiceTemplate.Interfaces</Name>
+      <Name>ServiceStackServiceLog4NetTemplate.Interfaces</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ServiceStackServiceTemplate.Managers\ServiceStackServiceTemplate.Managers.csproj">
+    <ProjectReference Include="..\ServiceStackServiceTemplate.Managers\ServiceStackServiceLog4NetTemplate.Managers.csproj">
       <Project>{e1c674ea-f8ea-444c-9ce8-d288e9051355}</Project>
-      <Name>ServiceStackServiceTemplate.Managers</Name>
+      <Name>ServiceStackServiceLog4NetTemplate.Managers</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ServiceStackServiceTemplate.Repositories\ServiceStackServiceTemplate.Repositories.csproj">
+    <ProjectReference Include="..\ServiceStackServiceTemplate.Repositories\ServiceStackServiceLog4NetTemplate.Repositories.csproj">
       <Project>{b2166507-066c-45b5-8cef-2ba460cc3f5b}</Project>
-      <Name>ServiceStackServiceTemplate.Repositories</Name>
+      <Name>ServiceStackServiceLog4NetTemplate.Repositories</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ServiceStackServiceTemplate.ServiceDefinition\ServiceStackServiceTemplate.ServiceDefinition.csproj">
+    <ProjectReference Include="..\ServiceStackServiceTemplate.ServiceDefinition\ServiceStackServiceLog4NetTemplate.ServiceDefinition.csproj">
       <Project>{801a0f89-d5f6-49a6-bcea-6624388c98a4}</Project>
-      <Name>ServiceStackServiceTemplate.ServiceDefinition</Name>
+      <Name>ServiceStackServiceLog4NetTemplate.ServiceDefinition</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ServiceStackServiceTemplate.ServiceModel\ServiceStackServiceTemplate.ServiceModel.csproj">
+    <ProjectReference Include="..\ServiceStackServiceTemplate.ServiceModel\ServiceStackServiceLog4NetTemplate.ServiceModel.csproj">
       <Project>{53E82AC1-DD1D-4C66-B55F-F9F4ACFB2F40}</Project>
-      <Name>ServiceStackServiceTemplate.ServiceModel</Name>
+      <Name>ServiceStackServiceLog4NetTemplate.ServiceModel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ServiceStackServiceTemplate.Validation\ServiceStackServiceTemplate.Validation.csproj">
+    <ProjectReference Include="..\ServiceStackServiceTemplate.Validation\ServiceStackServiceLog4NetTemplate.Validation.csproj">
       <Project>{f12d8417-ede5-42f8-8f88-55e2e9f376b2}</Project>
-      <Name>ServiceStackServiceTemplate.Validation</Name>
+      <Name>ServiceStackServiceLog4NetTemplate.Validation</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="scripts\ai.0.22.9-build00167.js" />
-    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Web.config.token">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
