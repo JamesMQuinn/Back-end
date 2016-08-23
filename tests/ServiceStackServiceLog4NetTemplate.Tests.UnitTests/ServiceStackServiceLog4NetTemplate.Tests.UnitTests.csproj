@@ -117,31 +117,31 @@
     <Compile Include="Services\ServiceDefinitionInfoShould.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\ServiceStackServiceTemplate.Interfaces\ServiceStackServiceLog4NetTemplate.Interfaces.csproj">
+    <ProjectReference Include="..\..\src\ServiceStackServiceLog4NetTemplate.Interfaces\ServiceStackServiceLog4NetTemplate.Interfaces.csproj">
       <Project>{756cb3d8-0029-4e34-9db3-7259c71a6321}</Project>
       <Name>ServiceStackServiceLog4NetTemplate.Interfaces</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\ServiceStackServiceTemplate.Managers\ServiceStackServiceLog4NetTemplate.Managers.csproj">
+    <ProjectReference Include="..\..\src\ServiceStackServiceLog4NetTemplate.Managers\ServiceStackServiceLog4NetTemplate.Managers.csproj">
       <Project>{e1c674ea-f8ea-444c-9ce8-d288e9051355}</Project>
       <Name>ServiceStackServiceLog4NetTemplate.Managers</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\ServiceStackServiceTemplate.Repositories\ServiceStackServiceLog4NetTemplate.Repositories.csproj">
+    <ProjectReference Include="..\..\src\ServiceStackServiceLog4NetTemplate.Repositories\ServiceStackServiceLog4NetTemplate.Repositories.csproj">
       <Project>{b2166507-066c-45b5-8cef-2ba460cc3f5b}</Project>
       <Name>ServiceStackServiceLog4NetTemplate.Repositories</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\ServiceStackServiceTemplate.ServiceDefinition\ServiceStackServiceLog4NetTemplate.ServiceDefinition.csproj">
+    <ProjectReference Include="..\..\src\ServiceStackServiceLog4NetTemplate.ServiceDefinition\ServiceStackServiceLog4NetTemplate.ServiceDefinition.csproj">
       <Project>{801a0f89-d5f6-49a6-bcea-6624388c98a4}</Project>
       <Name>ServiceStackServiceLog4NetTemplate.ServiceDefinition</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\ServiceStackServiceTemplate.ServiceModel\ServiceStackServiceLog4NetTemplate.ServiceModel.csproj">
+    <ProjectReference Include="..\..\src\ServiceStackServiceLog4NetTemplate.ServiceModel\ServiceStackServiceLog4NetTemplate.ServiceModel.csproj">
       <Project>{53e82ac1-dd1d-4c66-b55f-f9f4acfb2f40}</Project>
       <Name>ServiceStackServiceLog4NetTemplate.ServiceModel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\ServiceStackServiceTemplate.Validation\ServiceStackServiceLog4NetTemplate.Validation.csproj">
+    <ProjectReference Include="..\..\src\ServiceStackServiceLog4NetTemplate.Validation\ServiceStackServiceLog4NetTemplate.Validation.csproj">
       <Project>{f12d8417-ede5-42f8-8f88-55e2e9f376b2}</Project>
       <Name>ServiceStackServiceLog4NetTemplate.Validation</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\ServiceStackServiceTemplate\ServiceStackServiceLog4NetTemplate.csproj">
+    <ProjectReference Include="..\..\src\ServiceStackServiceLog4NetTemplate\ServiceStackServiceLog4NetTemplate.csproj">
       <Project>{4389b305-b381-4b50-b1a8-bbb5259a0524}</Project>
       <Name>ServiceStackServiceLog4NetTemplate</Name>
     </ProjectReference>

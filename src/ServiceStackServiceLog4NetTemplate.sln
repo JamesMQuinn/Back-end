@@ -4,23 +4,23 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CB96B6F2-69C4-4548-B1F7-8A9833CC8076}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackServiceLog4NetTemplate", "ServiceStackServiceTemplate\ServiceStackServiceLog4NetTemplate.csproj", "{4389B305-B381-4B50-B1A8-BBB5259A0524}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackServiceLog4NetTemplate", "ServiceStackServiceLog4NetTemplate\ServiceStackServiceLog4NetTemplate.csproj", "{4389B305-B381-4B50-B1A8-BBB5259A0524}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackServiceLog4NetTemplate.Interfaces", "ServiceStackServiceTemplate.Interfaces\ServiceStackServiceLog4NetTemplate.Interfaces.csproj", "{756CB3D8-0029-4E34-9DB3-7259C71A6321}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackServiceLog4NetTemplate.Interfaces", "ServiceStackServiceLog4NetTemplate.Interfaces\ServiceStackServiceLog4NetTemplate.Interfaces.csproj", "{756CB3D8-0029-4E34-9DB3-7259C71A6321}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackServiceLog4NetTemplate.Managers", "ServiceStackServiceTemplate.Managers\ServiceStackServiceLog4NetTemplate.Managers.csproj", "{E1C674EA-F8EA-444C-9CE8-D288E9051355}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackServiceLog4NetTemplate.Managers", "ServiceStackServiceLog4NetTemplate.Managers\ServiceStackServiceLog4NetTemplate.Managers.csproj", "{E1C674EA-F8EA-444C-9CE8-D288E9051355}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackServiceLog4NetTemplate.Repositories", "ServiceStackServiceTemplate.Repositories\ServiceStackServiceLog4NetTemplate.Repositories.csproj", "{B2166507-066C-45B5-8CEF-2BA460CC3F5B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackServiceLog4NetTemplate.Repositories", "ServiceStackServiceLog4NetTemplate.Repositories\ServiceStackServiceLog4NetTemplate.Repositories.csproj", "{B2166507-066C-45B5-8CEF-2BA460CC3F5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackServiceLog4NetTemplate.ServiceDefinition", "ServiceStackServiceTemplate.ServiceDefinition\ServiceStackServiceLog4NetTemplate.ServiceDefinition.csproj", "{801A0F89-D5F6-49A6-BCEA-6624388C98A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackServiceLog4NetTemplate.ServiceDefinition", "ServiceStackServiceLog4NetTemplate.ServiceDefinition\ServiceStackServiceLog4NetTemplate.ServiceDefinition.csproj", "{801A0F89-D5F6-49A6-BCEA-6624388C98A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackServiceLog4NetTemplate.ServiceModel", "ServiceStackServiceTemplate.ServiceModel\ServiceStackServiceLog4NetTemplate.ServiceModel.csproj", "{53E82AC1-DD1D-4C66-B55F-F9F4ACFB2F40}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackServiceLog4NetTemplate.ServiceModel", "ServiceStackServiceLog4NetTemplate.ServiceModel\ServiceStackServiceLog4NetTemplate.ServiceModel.csproj", "{53E82AC1-DD1D-4C66-B55F-F9F4ACFB2F40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackServiceLog4NetTemplate.Tests.UnitTests", "..\tests\ServiceStackServiceTemplate.Tests.UnitTests\ServiceStackServiceLog4NetTemplate.Tests.UnitTests.csproj", "{1342C9EC-6D6D-4A6F-98E8-0A6B8B290E36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackServiceLog4NetTemplate.Tests.UnitTests", "..\tests\ServiceStackServiceLog4NetTemplate.Tests.UnitTests\ServiceStackServiceLog4NetTemplate.Tests.UnitTests.csproj", "{1342C9EC-6D6D-4A6F-98E8-0A6B8B290E36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackServiceLog4NetTemplate.Tests.AcceptanceTests", "..\tests\ServiceStackServiceTemplate.Tests.AcceptanceTests\ServiceStackServiceLog4NetTemplate.Tests.AcceptanceTests.csproj", "{320D1E62-687D-4F7B-BDE1-A3FF7162A136}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackServiceLog4NetTemplate.Tests.AcceptanceTests", "..\tests\ServiceStackServiceLog4NetTemplate.Tests.AcceptanceTests\ServiceStackServiceLog4NetTemplate.Tests.AcceptanceTests.csproj", "{320D1E62-687D-4F7B-BDE1-A3FF7162A136}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackServiceLog4NetTemplate.Validation", "ServiceStackServiceTemplate.Validation\ServiceStackServiceLog4NetTemplate.Validation.csproj", "{F12D8417-EDE5-42F8-8F88-55E2E9F376B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackServiceLog4NetTemplate.Validation", "ServiceStackServiceLog4NetTemplate.Validation\ServiceStackServiceLog4NetTemplate.Validation.csproj", "{F12D8417-EDE5-42F8-8F88-55E2E9F376B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
