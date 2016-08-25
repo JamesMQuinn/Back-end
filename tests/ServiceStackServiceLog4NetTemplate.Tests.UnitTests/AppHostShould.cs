@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ServiceStack.Text;
+using Moq;
 
 namespace ServiceStackServiceLog4NetTemplate.Tests.UnitTests
 {

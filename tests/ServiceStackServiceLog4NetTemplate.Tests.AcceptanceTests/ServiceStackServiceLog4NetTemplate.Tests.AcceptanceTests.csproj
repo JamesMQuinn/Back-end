@@ -111,8 +111,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AcceptanceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServiceStackServiceTemplateClassNameIntegrationTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
