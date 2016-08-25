@@ -9,7 +9,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace ServiceStackServiceLog4NetTemplate.Tests.IntegrationTests
 {
     [TestClass]
-    public class ServiceStackServiceLog4NetTemplateClassNameIntegrationTest
+    public class AcceptanceTest
     {
         [TestInitialize]
         public void InitializeTestData()
