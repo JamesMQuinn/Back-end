@@ -6,8 +6,8 @@
     <ProjectGuid>{1342C9EC-6D6D-4A6F-98E8-0A6B8B290E36}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ServiceStackServiceTemplate.Tests.UnitTests</RootNamespace>
-    <AssemblyName>ServiceStackServiceTemplate.Tests.UnitTests</AssemblyName>
+    <RootNamespace>ServiceStackServiceLog4NetTemplate.Tests.UnitTests</RootNamespace>
+    <AssemblyName>ServiceStackServiceLog4NetTemplate.Tests.UnitTests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

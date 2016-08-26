@@ -7,8 +7,8 @@
     <ProjectGuid>{756CB3D8-0029-4E34-9DB3-7259C71A6321}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ServiceStackServiceTemplate.Interfaces</RootNamespace>
-    <AssemblyName>ServiceStackServiceTemplate.Interfaces</AssemblyName>
+    <RootNamespace>ServiceStackServiceLog4NetTemplate.Interfaces</RootNamespace>
+    <AssemblyName>ServiceStackServiceLog4NetTemplate.Interfaces</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

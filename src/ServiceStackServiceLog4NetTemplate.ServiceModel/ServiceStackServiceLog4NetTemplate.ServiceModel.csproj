@@ -7,8 +7,8 @@
     <ProjectGuid>{53E82AC1-DD1D-4C66-B55F-F9F4ACFB2F40}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ServiceStackServiceTemplate.ServiceModel</RootNamespace>
-    <AssemblyName>ServiceStackServiceTemplate.ServiceModel</AssemblyName>
+    <RootNamespace>ServiceStackServiceLog4NetTemplate.ServiceModel</RootNamespace>
+    <AssemblyName>ServiceStackServiceLog4NetTemplate.ServiceModel</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
