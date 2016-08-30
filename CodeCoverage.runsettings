@@ -41,7 +41,7 @@ Included items must then not match any entries in the exclude list to remain inc
 						<!-- (Use "\." to delimit namespaces in C# or Visual Basic, "::" in C++.)  -->
 						<Functions>
 							<Include>
-								<Function>^ServiceStackServiceTemplate.*</Function>
+								<Function>^ServiceStackServiceLog4NetTemplate.*</Function>
 							</Include>
 							<Exclude>
 								<Function>^Fabrikam\.UnitTest\..*</Function>
