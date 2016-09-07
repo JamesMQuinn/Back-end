@@ -1,7 +1,9 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace ServiceStackServiceLog4NetTemplate
 {
+    [ExcludeFromCodeCoverage]
     public class Global : System.Web.HttpApplication
     {
         protected void Application_Start(object sender, EventArgs e)
