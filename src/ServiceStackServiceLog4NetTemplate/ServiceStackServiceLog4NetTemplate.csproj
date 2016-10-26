@@ -43,12 +43,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CHRobinson.Enterprise.Logging, Version=1.1.15231.203, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CHRobinson.Enterprise.Logging.1.1.15231.203\lib\net40\CHRobinson.Enterprise.Logging.dll</HintPath>
+    <Reference Include="CHRobinson.Enterprise.Logging, Version=1.1.16285.201, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CHRobinson.Enterprise.Logging.1.1.16285.201\lib\net40\CHRobinson.Enterprise.Logging.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="CHRobinson.Enterprise.Logging.Log4Net.Net45, Version=1.1.15231.203, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CHRobinson.Enterprise.Logging.Log4Net.1.1.15231.203\lib\net45\CHRobinson.Enterprise.Logging.Log4Net.Net45.dll</HintPath>
+    <Reference Include="CHRobinson.Enterprise.Logging.Log4Net.Net45, Version=1.1.16285.201, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CHRobinson.Enterprise.Logging.Log4Net.1.1.16285.201\lib\net45\CHRobinson.Enterprise.Logging.Log4Net.Net45.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
