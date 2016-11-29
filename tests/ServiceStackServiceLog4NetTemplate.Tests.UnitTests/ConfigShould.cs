@@ -97,7 +97,7 @@ namespace ServiceStackServiceLog4NetTemplate.Tests.UnitTests
                     if ((connectionStringSetting.ElementInformation.Source != null)
                         && (connectionStringSetting.ElementInformation.Source.EndsWith(ServiceStackServiceLog4NetTemplateClassNameTokenPath)))
                     {
-                        connectionStringNames.Add(connectionStringSetting.Name);
+                        connectionStringTokenNames.Add(connectionStringSetting.Name);
                     }
                 }
             }
@@ -139,7 +139,7 @@ namespace ServiceStackServiceLog4NetTemplate.Tests.UnitTests
                     if ((connectionStringSetting.ElementInformation.Source != null)
                         && (connectionStringSetting.ElementInformation.Source.EndsWith(AcceptanceTestTokenPath)))
                     {
-                        connectionStringNames.Add(connectionStringSetting.Name);
+                        connectionStringTokenNames.Add(connectionStringSetting.Name);
                     }
                 }
             }
