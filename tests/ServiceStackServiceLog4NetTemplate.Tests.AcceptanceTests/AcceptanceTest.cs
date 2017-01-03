@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ServiceStackServiceLog4NetTemplate.Tests.IntegrationTests
+namespace ServiceStackServiceLog4NetTemplate.Tests.AcceptanceTests
 {
     [TestClass]
     public class AcceptanceTest
