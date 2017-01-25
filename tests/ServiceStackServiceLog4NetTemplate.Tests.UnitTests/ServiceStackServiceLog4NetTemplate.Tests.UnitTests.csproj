@@ -122,6 +122,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="AppHostShould.cs" />
+    <Compile Include="ContainerManagerShould.cs" />
     <Compile Include="ConfigShould.cs" />
     <Compile Include="Helpers\AppConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
