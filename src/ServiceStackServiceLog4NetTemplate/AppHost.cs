@@ -29,7 +29,6 @@ namespace ServiceStackServiceLog4NetTemplate
             ContainerManager.Register(container);
 
             InitializePlugins();
-            InitializeContainer(container);
         }
 
         private void InitializePlugins()
@@ -37,11 +36,6 @@ namespace ServiceStackServiceLog4NetTemplate
             Plugins.Add(new ValidationFeature());
             Plugins.Add(new PostmanFeature());
             Plugins.Add(new SwaggerFeature());
-        }
-
-        private void InitializeContainer(Container container)
-        {
-            container.RegisterValidators(ReuseScope.Container, typeof(ValidationInfo).Assembly);
         }
     }
 }
