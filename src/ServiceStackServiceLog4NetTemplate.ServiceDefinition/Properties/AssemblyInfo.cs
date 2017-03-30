@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ServiceStackServiceLog4NetTemplate.ServiceInterface")]
+[assembly: AssemblyTitle("ServiceStackServiceLog4NetTemplate.ServiceDefinition")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ServiceStackServiceLog4NetTemplate.ServiceInterface")]
+[assembly: AssemblyProduct("ServiceStackServiceLog4NetTemplate.ServiceDefinition")]
 [assembly: AssemblyCopyright("Copyright © 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
