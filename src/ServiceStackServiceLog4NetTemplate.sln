@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CB96B6F2-69C4-4548-B1F7-8A9833CC8076}"
 EndProject
@@ -21,6 +21,15 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackServiceLog4NetTemplate.Tests.AcceptanceTests", "..\tests\ServiceStackServiceLog4NetTemplate.Tests.AcceptanceTests\ServiceStackServiceLog4NetTemplate.Tests.AcceptanceTests.csproj", "{320D1E62-687D-4F7B-BDE1-A3FF7162A136}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackServiceLog4NetTemplate.Validation", "ServiceStackServiceLog4NetTemplate.Validation\ServiceStackServiceLog4NetTemplate.Validation.csproj", "{F12D8417-EDE5-42F8-8F88-55E2E9F376B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "git", "git", "{2DC470E6-5675-4871-BB90-8CA81346B917}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitattributes = ..\.gitattributes
+		..\.gitignore = ..\.gitignore
+		..\CodeCoverage.runsettings = ..\CodeCoverage.runsettings
+		..\README.md = ..\README.md
+		..\TriggerBuild.md = ..\TriggerBuild.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
