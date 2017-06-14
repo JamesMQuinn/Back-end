@@ -1,4 +1,3 @@
-using CHR.ServiceStack.Plugins;
 using Funq;
 using ServiceStack;
 using ServiceStack.Api.Swagger;
@@ -29,15 +28,14 @@ namespace ServiceStackServiceLog4NetTemplate
 
             ContainerManager.Register(container);
 
-            InitializePlugins(container);
+            InitializePlugins();
         }
 
-        private void InitializePlugins(Container container)
+        private void InitializePlugins()
         {
             Plugins.Add(new ValidationFeature());
             Plugins.Add(new PostmanFeature());
             Plugins.Add(new SwaggerFeature());
-            Plugins.Add(new HealthCheckFeature(container));
         }
     }
 }
