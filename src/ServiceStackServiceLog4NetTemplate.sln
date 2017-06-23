@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CB96B6F2-69C4-4548-B1F7-8A9833CC8076}"
 EndProject
@@ -30,6 +30,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "git", "git", "{2DC470E6-567
 		..\README.md = ..\README.md
 		..\TriggerBuild.md = ..\TriggerBuild.md
 	EndProjectSection
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ServiceStackServiceLog4NetTemplate.Database", "ServiceStackServiceLog4NetTemplate.Database\ServiceStackServiceLog4NetTemplate.Database.sqlproj", "{BC9BC927-662C-4DAC-90CE-9FDED30272ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -149,6 +151,24 @@ Global
 		{F12D8417-EDE5-42F8-8F88-55E2E9F376B2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F12D8417-EDE5-42F8-8F88-55E2E9F376B2}.Training|Any CPU.ActiveCfg = Release|Any CPU
 		{F12D8417-EDE5-42F8-8F88-55E2E9F376B2}.Training|Any CPU.Build.0 = Release|Any CPU
+		{BC9BC927-662C-4DAC-90CE-9FDED30272ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC9BC927-662C-4DAC-90CE-9FDED30272ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC9BC927-662C-4DAC-90CE-9FDED30272ED}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BC9BC927-662C-4DAC-90CE-9FDED30272ED}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC9BC927-662C-4DAC-90CE-9FDED30272ED}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{BC9BC927-662C-4DAC-90CE-9FDED30272ED}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{BC9BC927-662C-4DAC-90CE-9FDED30272ED}.Integration|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC9BC927-662C-4DAC-90CE-9FDED30272ED}.Integration|Any CPU.Build.0 = Debug|Any CPU
+		{BC9BC927-662C-4DAC-90CE-9FDED30272ED}.Integration|Any CPU.Deploy.0 = Debug|Any CPU
+		{BC9BC927-662C-4DAC-90CE-9FDED30272ED}.Production|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC9BC927-662C-4DAC-90CE-9FDED30272ED}.Production|Any CPU.Build.0 = Debug|Any CPU
+		{BC9BC927-662C-4DAC-90CE-9FDED30272ED}.Production|Any CPU.Deploy.0 = Debug|Any CPU
+		{BC9BC927-662C-4DAC-90CE-9FDED30272ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC9BC927-662C-4DAC-90CE-9FDED30272ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC9BC927-662C-4DAC-90CE-9FDED30272ED}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BC9BC927-662C-4DAC-90CE-9FDED30272ED}.Training|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC9BC927-662C-4DAC-90CE-9FDED30272ED}.Training|Any CPU.Build.0 = Debug|Any CPU
+		{BC9BC927-662C-4DAC-90CE-9FDED30272ED}.Training|Any CPU.Deploy.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
