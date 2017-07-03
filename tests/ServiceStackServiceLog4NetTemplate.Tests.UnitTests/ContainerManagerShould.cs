@@ -29,7 +29,7 @@ namespace ServiceStackServiceLog4NetTemplate.Tests.UnitTests
 
             //var expectedGenericInterfaces = new[]
             //{
-            //    typeof(IRulesManager<GeolocationSearchParameters>)
+            //    typeof(IExampleGenericInterface<ExampleType>)
             //};
 
             var expectedInterfaces = AppDomain
