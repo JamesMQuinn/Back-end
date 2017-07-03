@@ -14,7 +14,7 @@ namespace ServiceStackServiceLog4NetTemplate.Tests.UnitTests
         /// Verifies all interfaces defined in the Interfaces assembly are registered in the Container.
         /// </summary>
         [TestMethod]
-        public void RegisterEveryInterfaceInTheInterfacesAssembly()
+        public void Initialize_AllScenarios_AllInterfacesInTheInterfacesAssemblyRegistered()
         {
             // Arrange
             var container = new Container();
