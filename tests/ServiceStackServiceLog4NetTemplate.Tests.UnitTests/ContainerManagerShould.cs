@@ -36,9 +36,10 @@ namespace ServiceStackServiceLog4NetTemplate.Tests.UnitTests
                 .CurrentDomain
                 .GetAssemblies()
                 .SelectMany(assembly => assembly.GetTypes())
-                .Where(type => type.IsInterface)
-                .Where(type => !type.IsGenericType)
-                .Where(type => type.Namespace.StartsWith(interfacesNamespace))
+                .Where(type =>
+                    type.IsInterface &&
+                    !type.IsGenericType &&
+                    type.Namespace.StartsWith(interfacesNamespace))
                 .Except(interfacesThatDoNotNeedToBeRegistered);
             //  .Union(expectedGenericInterfaces);
 
