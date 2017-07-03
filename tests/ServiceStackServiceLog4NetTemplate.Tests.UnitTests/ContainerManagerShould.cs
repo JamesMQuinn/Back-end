@@ -51,7 +51,7 @@ namespace ServiceStackServiceLog4NetTemplate.Tests.UnitTests
             {
                 var actualInterface = container.TryResolve(expectedInterface);
 
-                actualInterface.Should().NotBeNull();
+                actualInterface.Should().NotBeNull("because {0} should be registered with the container", expectedInterface.Name);
             }
         }
     }
