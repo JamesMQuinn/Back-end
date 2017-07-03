@@ -1,70 +1,58 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using Castle.Core.Internal;
+﻿using FluentAssertions;
 using Funq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ServiceStackServiceLog4NetTemplate.Interfaces;
+using System;
+using System.Linq;
 
 namespace ServiceStackServiceLog4NetTemplate.Tests.UnitTests
 {
     [TestClass]
-    public class ContainerManagerShould : IExampleInterface
+    public class ContainerManagerShould
     {
         /// <summary>
-        /// Tests if there is something registered but not that it is the correct thing
-        /// This proactively checks if a new interface has been registered so you catch problems with unit tests and not in AATs
+        /// Verifies all interfaces defined in the Interfaces assembly are registered in the Container.
         /// </summary>
         [TestMethod]
-        public void Initialize_AllScenarios_AllInterfacesRegisteredWithSomething()
+        public void Initialize_AllScenarios_AllInterfacesInTheInterfacesAssemblyRegistered()
         {
-            //Arrange
-            // Add interfaces that shouldn't be registered here
-            var exceptions = new List<string>()
-            {
-                "IExampleInterface" // The namespace needs at least one interface that is being used for the test to pass
-            };
+            // Arrange
             var container = new Container();
+            var interfacesAssemblyInfoType = typeof(InterfacesAssemblyInfo);
+            var interfacesAssembly = interfacesAssemblyInfoType.Assembly;
+            var interfacesNamespace = interfacesAssemblyInfoType.Namespace;
 
-            var nameSpace = "ServiceStackServiceLog4NetTemplate.Interfaces";
-
-            // Get the interface assembly name
-            var interfaceAssemblyName =
-                AppDomain.CurrentDomain.GetAssemblies()
-                    .SelectMany(x => x.GetReferencedAssemblies())
-                    .FirstOrDefault(x => x.Name == nameSpace);
-
-            if (interfaceAssemblyName == null)
+            var interfacesThatDoNotNeedToBeRegistered = new[]
             {
-                Assert.IsNotNull(interfaceAssemblyName, "No interface project found. Either the namespace used by the test is wrong or it has no interfaces in it.");
-            }
-            // so that then we can load it
-            Assembly.Load(interfaceAssemblyName);
+                typeof(IExampleInterface)
+            };
 
-            // so then we can get all the interfaces!
-            var interfaces = (from t in AppDomain.CurrentDomain.GetAssemblies()
-                       .SelectMany(t => t.GetTypes())
-                              where t.IsInterface && t.Namespace != null && t.Namespace.StartsWith(nameSpace) && exceptions.All(e => t.Name != e)
-                              select t);
+            //var expectedGenericInterfaces = new[]
+            //{
+            //    typeof(IExampleGenericInterface<ExampleType>)
+            //};
+
+            var expectedInterfaces = AppDomain
+                .CurrentDomain
+                .GetAssemblies()
+                .SelectMany(assembly => assembly.GetTypes())
+                .Where(type =>
+                    type.IsInterface &&
+                    !type.IsGenericType &&
+                    type.Namespace.StartsWith(interfacesNamespace))
+                .Except(interfacesThatDoNotNeedToBeRegistered);
+            //  .Union(expectedGenericInterfaces);
 
             // Act
             ContainerManager.Register(container);
 
-            //Assert
-            // Check if the interfaces are registered with the container
-            interfaces.ForEach(t =>
+            // Assert
+            foreach (var expectedInterface in expectedInterfaces)
             {
-                var resolveMethodInfo = typeof(Container).GetMethods().Single(m => m.Name == "Resolve" && !m.GetParameters().Any());
+                var actualInterface = container.TryResolve(expectedInterface);
 
-                var genericMethod = resolveMethodInfo.MakeGenericMethod(t);
-
-                var result = genericMethod.Invoke(container, null);
-
-                // (although it probably threw an exception if it failed)
-                Assert.IsNotNull(result, $"{t.Name} should be registered with the container");
-            });
+                actualInterface.Should().NotBeNull("because {0} should be registered with the container", expectedInterface.Name);
+            }
         }
-
     }
 }
