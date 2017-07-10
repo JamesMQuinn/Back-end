@@ -1,1 +1,4 @@
 src/ServiceStackServiceTemplate/scripts/* linguist-vendored
+# Auto detect text files and perform LF normalization
+# https://www.hanselman.com/blog/YoureJustAnotherCarriageReturnLineFeedInTheWall.aspx
+* text=auto
