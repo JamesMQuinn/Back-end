@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.Xml.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ServiceStackServiceLog4NetTemplate.Tests.UnitTests.Helpers;
 
@@ -69,6 +70,18 @@ namespace ServiceStackServiceLog4NetTemplate.Tests.UnitTests
             {
                 Assert.IsTrue(keys.Any(k => k == key), $"Key:{key} not found in AppSettings section of AAT config file.");
             }
+        }
+
+        [TestMethod]
+        public void AssemblyRedirectsInWebConfig_MatchWebConfigToken()
+        {
+            var webConfigXmlDoc = XDocument.Load(ServiceStackServiceLog4NetTemplateClassNameAppConfigPath);
+            var webConfigTokenXmlDoc = XDocument.Load(ServiceStackServiceLog4NetTemplateClassNameTokenPath);
+
+            var webConfigXmlAssemblyBindingElement = webConfigXmlDoc.Descendants().FirstOrDefault(element => element.Name.LocalName == "assemblyBinding");
+            var webConfigTokenXmlAssemblyBindingElement = webConfigTokenXmlDoc.Descendants().FirstOrDefault(element => element.Name.LocalName == "assemblyBinding");
+
+            Assert.AreEqual(webConfigXmlAssemblyBindingElement?.ToString(), webConfigTokenXmlAssemblyBindingElement?.ToString());
         }
 
         [TestMethod]
