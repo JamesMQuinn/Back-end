@@ -43,17 +43,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CHR.ServiceStack.Plugins, Version=1.0.0.30, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CHR.ServiceStack.Plugins.1.0.0.30\lib\net452\CHR.ServiceStack.Plugins.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="CHR.ServiceStack.Plugins, Version=1.0.0.65, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CHR.ServiceStack.Plugins.1.0.0.65\lib\net452\CHR.ServiceStack.Plugins.dll</HintPath>
     </Reference>
-    <Reference Include="CHR.ServiceStack.Plugins.ServiceDefinition, Version=1.0.0.30, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CHR.ServiceStack.Plugins.1.0.0.30\lib\net452\CHR.ServiceStack.Plugins.ServiceDefinition.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="CHR.ServiceStack.Plugins.ServiceDefinition, Version=1.0.0.65, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CHR.ServiceStack.Plugins.1.0.0.65\lib\net452\CHR.ServiceStack.Plugins.ServiceDefinition.dll</HintPath>
     </Reference>
-    <Reference Include="CHR.ServiceStack.Plugins.ServiceModel, Version=1.0.0.30, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CHR.ServiceStack.Plugins.1.0.0.30\lib\net452\CHR.ServiceStack.Plugins.ServiceModel.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="CHR.ServiceStack.Plugins.ServiceModel, Version=1.0.0.65, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CHR.ServiceStack.Plugins.1.0.0.65\lib\net452\CHR.ServiceStack.Plugins.ServiceModel.dll</HintPath>
     </Reference>
     <Reference Include="CHRobinson.Enterprise.Logging, Version=1.1.16285.201, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\CHRobinson.Enterprise.Logging.1.1.16285.201\lib\net40\CHRobinson.Enterprise.Logging.dll</HintPath>
@@ -62,6 +59,9 @@
     <Reference Include="CHRobinson.Enterprise.Logging.Log4Net.Net45, Version=1.1.16285.201, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\CHRobinson.Enterprise.Logging.Log4Net.1.1.16285.201\lib\net45\CHRobinson.Enterprise.Logging.Log4Net.Net45.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="CHRobinson.Shared.OperationContext, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CHRobinson.Shared.OperationContext.1.0.0.4\lib\net40\CHRobinson.Shared.OperationContext.dll</HintPath>
     </Reference>
     <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
