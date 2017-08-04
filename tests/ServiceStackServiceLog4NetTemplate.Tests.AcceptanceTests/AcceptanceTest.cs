@@ -26,11 +26,13 @@ namespace ServiceStackServiceLog4NetTemplate.Tests.AcceptanceTests
             Console.WriteLine("--End AppSettings--");
             _jsonClient = new JsonServiceClient(ConfigurationManager.AppSettings["ServiceUrl"]);
         }
+
         [TestCleanup]
         public void Cleanup()
         {
             _jsonClient.Dispose();
         }
+
         [TestMethod, TestCategory("AutomatedAcceptance")]
         public void CheckServiceHealth_ShouldBeHealthy()
         {
