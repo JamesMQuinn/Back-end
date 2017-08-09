@@ -26,41 +26,49 @@ namespace ServiceStackServiceLog4NetTemplate.Tests.AcceptanceTests
             Console.WriteLine("--End AppSettings--");
             _jsonClient = new JsonServiceClient(ConfigurationManager.AppSettings["ServiceUrl"]);
         }
+
         [TestCleanup]
         public void Cleanup()
         {
             _jsonClient.Dispose();
         }
+
         [TestMethod, TestCategory("AutomatedAcceptance")]
         public void CheckServiceHealth_ShouldBeHealthy()
         {
             HealthCheckRequest request = new HealthCheckRequest();
 
             Console.WriteLine($"Calling Health Check...");
-            HealthCheckResponse response = _jsonClient.Get(request);
-
-            if (response.AmIHealthy)
+            try
             {
-                Console.WriteLine("Healthy Health Check Returned.");
-                Assert.IsTrue(true);
+                _jsonClient.Get(request);
             }
-            else
+            catch (WebServiceException ex)
             {
-                Console.WriteLine($"Found {response?.UnresolvedUrls?.Count} unresolved urls");
-                if (response?.UnresolvedUrls != null)
+                var unresolvedDependencies = ex.ResponseStatus?.Errors?.Select(responseError => responseError.Message);
+
+                if (unresolvedDependencies != null && unresolvedDependencies.Any())
                 {
-                    foreach (var unresolvedUrl in response.UnresolvedUrls)
+                    Console.WriteLine($"Found {unresolvedDependencies.Count()} unresolved dependencies");
+
+                    foreach (var unresolvedDependency in unresolvedDependencies)
                     {
-                        Console.WriteLine($"Url/DB that was unresolved: {unresolvedUrl}");
+                        Console.WriteLine($"Dependency that was unresolved: {unresolvedDependency}");
                     }
                     Assert.IsTrue(false);
                 }
                 else
                 {
-                    Console.WriteLine($"AmIHealthy is False, but UnResolved URLS are Null");
+                    Console.WriteLine($"AmIHealthy is False, but no unresolved dependencies were found");
                     Assert.IsTrue(false);
                 }
+
+                return;
             }
+
+            Console.WriteLine("Healthy Health Check Returned.");
+            Assert.IsTrue(true);
         }
     }
 }
+
