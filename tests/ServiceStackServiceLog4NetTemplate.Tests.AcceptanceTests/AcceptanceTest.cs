@@ -59,7 +59,7 @@ namespace ServiceStackServiceLog4NetTemplate.Tests.AcceptanceTests
                 }
                 else
                 {
-                    Console.WriteLine($"AmIHealthy is False, but no unresolved dependencies were found");
+                    Console.WriteLine($"Health check failed but no unresolved dependencies were found");
                     Assert.IsTrue(false);
                 }
 
