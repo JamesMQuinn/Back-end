@@ -43,14 +43,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CHR.ServiceStack.Plugins, Version=1.0.0.65, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CHR.ServiceStack.Plugins.1.0.0.65\lib\net452\CHR.ServiceStack.Plugins.dll</HintPath>
+    <Reference Include="CHR.ServiceStack.Plugins, Version=1.0.0.71, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CHR.ServiceStack.Plugins.1.0.0.71\lib\net452\CHR.ServiceStack.Plugins.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="CHR.ServiceStack.Plugins.ServiceDefinition, Version=1.0.0.65, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CHR.ServiceStack.Plugins.1.0.0.65\lib\net452\CHR.ServiceStack.Plugins.ServiceDefinition.dll</HintPath>
+    <Reference Include="CHR.ServiceStack.Plugins.ServiceDefinition, Version=1.0.0.71, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CHR.ServiceStack.Plugins.1.0.0.71\lib\net452\CHR.ServiceStack.Plugins.ServiceDefinition.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="CHR.ServiceStack.Plugins.ServiceModel, Version=1.0.0.65, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CHR.ServiceStack.Plugins.1.0.0.65\lib\net452\CHR.ServiceStack.Plugins.ServiceModel.dll</HintPath>
+    <Reference Include="CHR.ServiceStack.Plugins.ServiceModel, Version=1.0.0.71, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CHR.ServiceStack.Plugins.1.0.0.71\lib\net452\CHR.ServiceStack.Plugins.ServiceModel.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="CHRobinson.Enterprise.Logging, Version=1.1.16285.201, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\CHRobinson.Enterprise.Logging.1.1.16285.201\lib\net40\CHRobinson.Enterprise.Logging.dll</HintPath>

@@ -38,6 +38,7 @@ namespace ServiceStackServiceLog4NetTemplate
             Plugins.Add(new PostmanFeature());
             Plugins.Add(new SwaggerFeature());
             Plugins.Add(new HealthCheckFeature(container));
+            Plugins.Add(new CorrelationIdFeature());
         }
     }
 }
