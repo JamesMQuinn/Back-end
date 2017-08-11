@@ -65,14 +65,17 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CHR.ServiceStack.Plugins, Version=1.0.0.65, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\src\packages\CHR.ServiceStack.Plugins.1.0.0.65\lib\net452\CHR.ServiceStack.Plugins.dll</HintPath>
+    <Reference Include="CHR.ServiceStack.Plugins, Version=1.0.0.71, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\src\packages\CHR.ServiceStack.Plugins.1.0.0.71\lib\net452\CHR.ServiceStack.Plugins.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="CHR.ServiceStack.Plugins.ServiceDefinition, Version=1.0.0.65, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\src\packages\CHR.ServiceStack.Plugins.1.0.0.65\lib\net452\CHR.ServiceStack.Plugins.ServiceDefinition.dll</HintPath>
+    <Reference Include="CHR.ServiceStack.Plugins.ServiceDefinition, Version=1.0.0.71, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\src\packages\CHR.ServiceStack.Plugins.1.0.0.71\lib\net452\CHR.ServiceStack.Plugins.ServiceDefinition.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="CHR.ServiceStack.Plugins.ServiceModel, Version=1.0.0.65, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\src\packages\CHR.ServiceStack.Plugins.1.0.0.65\lib\net452\CHR.ServiceStack.Plugins.ServiceModel.dll</HintPath>
+    <Reference Include="CHR.ServiceStack.Plugins.ServiceModel, Version=1.0.0.71, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\src\packages\CHR.ServiceStack.Plugins.1.0.0.71\lib\net452\CHR.ServiceStack.Plugins.ServiceModel.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="CHRobinson.Shared.OperationContext, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\src\packages\CHRobinson.Shared.OperationContext.1.0.0.4\lib\net40\CHRobinson.Shared.OperationContext.dll</HintPath>
