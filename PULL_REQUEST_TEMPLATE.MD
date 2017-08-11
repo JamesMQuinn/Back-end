@@ -1,0 +1,4 @@
+- [ ] Unit tests created
+- [ ] [Code coverage](http://sonarqube.chrobinson.com/overview?id=DevOps.ServiceStackServiceLog4NetTemplate) has not dipped below 90% and not significantly  decreased (use your best judgement)
+- [ ] Issue linked
+- [ ] If not a simple change the approach has already been vetted out in the corresponding issue
