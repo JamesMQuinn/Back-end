@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <ApplicationInsightsResourceId>/subscriptions/3161c4d3-84ea-4834-add9-9165000fc313/resourcegroups/MasterDataManagement/providers/microsoft.insights/components/MDM Dev</ApplicationInsightsResourceId>
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,17 +44,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CHR.ServiceStack.Plugins, Version=1.0.0.71, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CHR.ServiceStack.Plugins.1.0.0.71\lib\net452\CHR.ServiceStack.Plugins.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="CHR.ServiceStack.Plugins, Version=1.0.0.86, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CHR.ServiceStack.Plugins.1.0.0.86\lib\net452\CHR.ServiceStack.Plugins.dll</HintPath>
     </Reference>
-    <Reference Include="CHR.ServiceStack.Plugins.ServiceDefinition, Version=1.0.0.71, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CHR.ServiceStack.Plugins.1.0.0.71\lib\net452\CHR.ServiceStack.Plugins.ServiceDefinition.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="CHR.ServiceStack.Plugins.ServiceDefinition, Version=1.0.0.86, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CHR.ServiceStack.Plugins.1.0.0.86\lib\net452\CHR.ServiceStack.Plugins.ServiceDefinition.dll</HintPath>
     </Reference>
-    <Reference Include="CHR.ServiceStack.Plugins.ServiceModel, Version=1.0.0.71, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CHR.ServiceStack.Plugins.1.0.0.71\lib\net452\CHR.ServiceStack.Plugins.ServiceModel.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="CHR.ServiceStack.Plugins.ServiceModel, Version=1.0.0.86, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CHR.ServiceStack.Plugins.1.0.0.86\lib\net452\CHR.ServiceStack.Plugins.ServiceModel.dll</HintPath>
     </Reference>
     <Reference Include="CHRobinson.Enterprise.Logging, Version=1.1.16285.201, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\CHRobinson.Enterprise.Logging.1.1.16285.201\lib\net40\CHRobinson.Enterprise.Logging.dll</HintPath>
