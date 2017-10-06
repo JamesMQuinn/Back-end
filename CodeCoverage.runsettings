@@ -33,7 +33,6 @@ Included items must then not match any entries in the exclude list to remain inc
 							<Exclude>
 								<ModulePath>.*CPPUnitTestFramework.*</ModulePath>
 								<ModulePath>.*tests.dll</ModulePath>
-								<ModulePath>.*servicemodel.dll</ModulePath>
 							</Exclude>
 						</ModulePaths>
 
