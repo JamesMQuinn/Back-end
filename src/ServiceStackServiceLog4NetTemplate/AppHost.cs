@@ -30,6 +30,16 @@ namespace ServiceStackServiceLog4NetTemplate
             ContainerManager.Register(container);
 
             InitializePlugins(container);
+
+            //capture validation and service errors 
+            this.ServiceExceptionHandlers.Add((httpReq, request, exception) =>
+            {
+                //log exception
+                EnterpriseMonitoring.Logging.NetFramework.LogManager.Logger.TrackException(exception);
+
+                //continue with default Error Handling
+                return null;
+            });
         }
 
         private void InitializePlugins(Container container)
