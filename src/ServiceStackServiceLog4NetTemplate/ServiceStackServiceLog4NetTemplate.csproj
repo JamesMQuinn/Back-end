@@ -64,12 +64,12 @@
     <Reference Include="CHRobinson.Shared.OperationContext, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\CHRobinson.Shared.OperationContext.1.0.0.4\lib\net40\CHRobinson.Shared.OperationContext.dll</HintPath>
     </Reference>
-    <Reference Include="EnterpriseMonitoring.Logging.NetFramework, Version=1.0.0.185, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EnterpriseMonitoring.Logging.NetFramework.1.0.0.185\lib\net452\EnterpriseMonitoring.Logging.NetFramework.dll</HintPath>
+    <Reference Include="EnterpriseMonitoring.Logging.NetFramework, Version=1.2.0.195, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseMonitoring.Logging.NetFramework.1.2.0.195\lib\net452\EnterpriseMonitoring.Logging.NetFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="EnterpriseMonitoring.Logging.NetFramework.Log4Net, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EnterpriseMonitoring.Logging.NetFramework.Log4Net.1.0.0.2\lib\net452\EnterpriseMonitoring.Logging.NetFramework.Log4Net.dll</HintPath>
+    <Reference Include="EnterpriseMonitoring.Logging.NetFramework.Log4Net, Version=1.0.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseMonitoring.Logging.NetFramework.Log4Net.1.0.0.4\lib\net452\EnterpriseMonitoring.Logging.NetFramework.Log4Net.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
@@ -160,6 +160,7 @@
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Readme-Logger.txt" />
     <Content Include="Web.config.token">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -194,6 +195,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="LoggingInitializers\ServiceStackInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>

@@ -40,7 +40,6 @@ namespace ServiceStackServiceLog4NetTemplate
                 //continue with default Error Handling
                 return null;
             });
-dd
         }
 
         private void InitializePlugins(Container container)
