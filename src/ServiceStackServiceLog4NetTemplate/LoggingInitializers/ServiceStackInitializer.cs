@@ -40,20 +40,25 @@ namespace ServiceStackServiceLog4NetTemplate.LoggingInitializers
 
                         if (!operationContext.UserName.IsNullOrEmpty())
                         {
-                            telemetry.User.ClientUserName = operationContext.CorrelationId;
+                            telemetry.User.ClientUserName = operationContext.UserName;
                         }
                     }
                 }
 
                 //standarized REST route without individual path
                 IRequest iRequest = instance.TryGetCurrentRequest();
-                
-                if (iRequest != null && iRequest.Items != null)
+
+                //test web api to see if this comes through for dev side.
+                var iasp = iRequest as AspNetRequest;
+                iasp.XForwardedFor;
+                iasp.XForwardedPort;
+                iasp.XForwardedProtocol;
+
+                if (iRequest != null)
                 {
-                    object restPathObject = null;
-                    if (iRequest.Items.TryGetValue("__route", out restPathObject) && restPathObject != null && restPathObject is RestPath)
+                    RestPath restPath = iRequest.GetRoute();
+                    if (restPath!=null)
                     {
-                        var restPath = restPathObject as RestPath;
                         var aspNetRequest = iRequest as AspNetRequest;
                         telemetry.Http.Name = $"{aspNetRequest.HttpMethod} {restPath.Path}";
                     }
