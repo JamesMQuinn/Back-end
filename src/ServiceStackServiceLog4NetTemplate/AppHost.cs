@@ -48,10 +48,10 @@ namespace ServiceStackServiceLog4NetTemplate
             Plugins.Add(new ValidationFeature());
             Plugins.Add(new PostmanFeature());
             Plugins.Add(new SwaggerFeature());
-            //Plugins.Add(new HealthCheckFeature(container));
+            Plugins.Add(new HealthCheckFeature(container));
             //Plugins.Add(new CorrelationIdFeature()); 
             //use logger correlation manager.
-            Plugins.Add(new LoggingSetup.LoggingCorrelationSetup(container));
+            Plugins.Add(new LoggingSetup.LoggingCorrelationSetup());
         }
     }
 }
