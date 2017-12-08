@@ -9,10 +9,10 @@ using ServiceStack.Web;
 using ServiceStack.Host;
 using ServiceStack.Host.AspNet;
 
-namespace ServiceStackServiceLog4NetTemplate.LoggingInitializers
+namespace ServiceStackServiceLog4NetTemplate.LoggingSetup
 {
     /// <summary>
-    /// override data that is only seen in service stack ecosystem.
+    /// override Telemetry context that is only seen in service stack ecosystem.
     /// </summary>
     public class ServiceStackInitializer : ITelemetryContextInitializer
     {
@@ -25,19 +25,16 @@ namespace ServiceStackServiceLog4NetTemplate.LoggingInitializers
                 if (container != null)
                 {
                     //grab data if application is using operation context.
-                    var operationContext = container.TryResolve<OperationContext>();
+                    OperationContext operationContext = container.TryResolve<OperationContext>();
                     if (operationContext != null)
                     {
+                        //call parent system name
                         if (!operationContext.SourceSystem.IsNullOrEmpty())
                         {
                             telemetry.Http.SourceSystem = operationContext.SourceSystem;
                         }
 
-                        if (!operationContext.CorrelationId.IsNullOrEmpty())
-                        {
-                            telemetry.Http.CorrelationId = operationContext.CorrelationId;
-                        }
-
+                        //user name of caller
                         if (!operationContext.UserName.IsNullOrEmpty())
                         {
                             telemetry.User.ClientUserName = operationContext.UserName;
@@ -45,25 +42,25 @@ namespace ServiceStackServiceLog4NetTemplate.LoggingInitializers
                     }
                 }
 
-                //standarized REST route without individual path
-                IRequest iRequest = instance.TryGetCurrentRequest();
-
-                //test web api to see if this comes through for dev side.
-                var iasp = iRequest as AspNetRequest;
-                iasp.XForwardedFor;
-                iasp.XForwardedPort;
-                iasp.XForwardedProtocol;
-
-                if (iRequest != null)
-                {
-                    RestPath restPath = iRequest.GetRoute();
-                    if (restPath!=null)
-                    {
-                        var aspNetRequest = iRequest as AspNetRequest;
-                        telemetry.Http.Name = $"{aspNetRequest.HttpMethod} {restPath.Path}";
-                    }
-                }
+                //attempt to standarized REST route without individual path
+                StandarizedRouteName(instance.TryGetCurrentRequest(), telemetry);
             }           
+        }
+
+        /// <summary>
+        /// attempt to standarized REST route without individual path
+        /// </summary>
+        private void StandarizedRouteName(IRequest iRequest, ITelemetryContext telemetry)
+        {
+            if (iRequest != null)
+            {
+                RestPath restPath = iRequest.GetRoute();
+                if (restPath != null)
+                {
+                    AspNetRequest aspNetRequest = iRequest as AspNetRequest;
+                    telemetry.Http.Name = $"{aspNetRequest.HttpMethod} {restPath.Path}";
+                }
+            }
         }
     }
 }

@@ -35,7 +35,8 @@ namespace ServiceStackServiceLog4NetTemplate
             this.ServiceExceptionHandlers.Add((httpReq, request, exception) =>
             {
                 //log exception
-                EnterpriseMonitoring.Logging.NetFramework.LogManager.Logger.TrackException(exception,EnterpriseMonitoring.Logging.NetFramework.LogLevel.Verbose, "ServiceExceptionHandlers");
+                EnterpriseMonitoring.Logging.NetFramework.LogManager.Logger.
+                        TrackException(exception,EnterpriseMonitoring.Logging.NetFramework.LogLevel.Verbose, "ServiceExceptionHandlers");
 
                 //continue with default Error Handling
                 return null;
@@ -47,8 +48,10 @@ namespace ServiceStackServiceLog4NetTemplate
             Plugins.Add(new ValidationFeature());
             Plugins.Add(new PostmanFeature());
             Plugins.Add(new SwaggerFeature());
-            Plugins.Add(new HealthCheckFeature(container));
-            Plugins.Add(new CorrelationIdFeature());
+            //Plugins.Add(new HealthCheckFeature(container));
+            //Plugins.Add(new CorrelationIdFeature()); 
+            //use logger correlation manager.
+            Plugins.Add(new LoggingSetup.LoggingCorrelationSetup(container));
         }
     }
 }
