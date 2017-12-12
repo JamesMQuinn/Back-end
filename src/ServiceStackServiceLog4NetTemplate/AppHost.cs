@@ -6,6 +6,7 @@ using ServiceStack.Text;
 using ServiceStack.Validation;
 using ServiceStackServiceLog4NetTemplate.ServiceDefinition;
 using ServiceStackServiceLog4NetTemplate.Validation;
+using EnterpriseMonitoring.Logging.ServiceStack;
 
 namespace ServiceStackServiceLog4NetTemplate
 {
@@ -31,17 +32,10 @@ namespace ServiceStackServiceLog4NetTemplate
 
             InitializePlugins(container);
 
-            //capture validation and service errors 
-            this.ServiceExceptionHandlers.Add((httpReq, request, exception) =>
-            {
-                //log exception
-                EnterpriseMonitoring.Logging.NetFramework.LogManager.Logger.
-                        TrackException(exception,EnterpriseMonitoring.Logging.NetFramework.LogLevel.Verbose, "ServiceExceptionHandlers");
-
-                //continue with default Error Handling
-                return null;
-            });
+            //wire in correlation and expection capturing for service & validation errors for the enterprise monitoring logging sdk.
+            this.AddCorrelationLogging().AddServiceExceptionLogging();
         }
+
 
         private void InitializePlugins(Container container)
         {
@@ -49,9 +43,6 @@ namespace ServiceStackServiceLog4NetTemplate
             Plugins.Add(new PostmanFeature());
             Plugins.Add(new SwaggerFeature());
             Plugins.Add(new HealthCheckFeature(container));
-            //Plugins.Add(new CorrelationIdFeature()); 
-            //use logger correlation manager.
-            Plugins.Add(new LoggingSetup.LoggingCorrelationSetup());
         }
     }
 }
