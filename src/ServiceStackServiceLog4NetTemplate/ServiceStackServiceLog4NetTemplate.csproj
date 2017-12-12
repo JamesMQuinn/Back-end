@@ -164,7 +164,6 @@
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Readme-Logger.txt" />
     <Content Include="Web.config.token">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
