@@ -64,15 +64,14 @@
     <Reference Include="CHRobinson.Shared.OperationContext, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\CHRobinson.Shared.OperationContext.1.0.0.4\lib\net40\CHRobinson.Shared.OperationContext.dll</HintPath>
     </Reference>
-    <Reference Include="EnterpriseMonitoring.Logging.NetFramework, Version=1.2.0.233, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EnterpriseMonitoring.Logging.NetFramework.1.2.0.233\lib\net452\EnterpriseMonitoring.Logging.NetFramework.dll</HintPath>
+    <Reference Include="EnterpriseMonitoring.Logging.NetFramework, Version=1.2.1.247, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseMonitoring.Logging.NetFramework.1.2.1.247\lib\net452\EnterpriseMonitoring.Logging.NetFramework.dll</HintPath>
     </Reference>
-    <Reference Include="EnterpriseMonitoring.Logging.NetFramework.Log4Net, Version=1.0.0.7, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EnterpriseMonitoring.Logging.NetFramework.Log4Net.1.0.0.7\lib\net452\EnterpriseMonitoring.Logging.NetFramework.Log4Net.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="EnterpriseMonitoring.Logging.NetFramework.Log4Net, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseMonitoring.Logging.NetFramework.Log4Net.1.0.1\lib\net452\EnterpriseMonitoring.Logging.NetFramework.Log4Net.dll</HintPath>
     </Reference>
-    <Reference Include="EnterpriseMonitoring.Logging.ServiceStack, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EnterpriseMonitoring.Logging.ServiceStack.1.0.0.1\lib\net452\EnterpriseMonitoring.Logging.ServiceStack.dll</HintPath>
+    <Reference Include="EnterpriseMonitoring.Logging.ServiceStack, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseMonitoring.Logging.ServiceStack.1.0.0.2\lib\net452\EnterpriseMonitoring.Logging.ServiceStack.dll</HintPath>
     </Reference>
     <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
