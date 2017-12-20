@@ -6,7 +6,6 @@ using ServiceStack.Text;
 using ServiceStack.Validation;
 using ServiceStackServiceLog4NetTemplate.ServiceDefinition;
 using ServiceStackServiceLog4NetTemplate.Validation;
-using EnterpriseMonitoring.Logging.ServiceStack;
 
 namespace ServiceStackServiceLog4NetTemplate
 {
