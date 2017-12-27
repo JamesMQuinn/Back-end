@@ -30,7 +30,13 @@ namespace ServiceStackServiceLog4NetTemplate
             ContainerManager.Register(container);
 
             InitializePlugins(container);
+
+            //wiki for enterprise monitoring logging sdk 
+            //https://github.chrobinson.com/CHR/EnterpriseMonitoring.Logging/wiki
+            //wire in correlation and expection capturing for service & validation errors for the enterprise monitoring logging sdk.
+            this.AddCorrelationLogging().AddServiceExceptionLogging();
         }
+
 
         private void InitializePlugins(Container container)
         {
@@ -38,7 +44,7 @@ namespace ServiceStackServiceLog4NetTemplate
             Plugins.Add(new PostmanFeature());
             Plugins.Add(new SwaggerFeature());
             Plugins.Add(new HealthCheckFeature(container));
-            Plugins.Add(new CorrelationIdFeature());
         }
+
     }
 }
