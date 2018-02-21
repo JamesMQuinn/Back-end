@@ -38,7 +38,7 @@ namespace ServiceStackServiceLog4NetTemplate.Tests.UnitTests
                 var expectedInterfaces = AppDomain
                     .CurrentDomain
                     .GetAssemblies()
-                    .Where(assembly => !(assembly.FullName.Split(',').First() == ("EnterpriseMonitoring.Logging.NetFramework")))
+                    .Where(assembly => !(assembly.FullName.Split(',').First().StartsWith("EnterpriseMonitoring.Logging.NetFramework")))
                     .SelectMany(assembly => assembly.GetTypes())
                     .Where(type =>
                         type.IsInterface &&
