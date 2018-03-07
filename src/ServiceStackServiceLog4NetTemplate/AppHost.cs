@@ -33,8 +33,15 @@ namespace ServiceStackServiceLog4NetTemplate
 
             //wiki for enterprise monitoring logging sdk 
             //https://github.chrobinson.com/CHR/EnterpriseMonitoring.Logging/wiki
+
+            //wiki for enterprise monitoring servicestack extensions
+            //https://github.chrobinson.com/CHR/EnterpriseMonitoring.Logging/wiki/ServiceStack
             //wire in correlation for adding header, IRequest container for capturing routing, and expection capturing for service & validation errors for the enterprise monitoring logging sdk.
             this.AddCorrelationLogging().AddServiceExceptionLogging().AddIRequestToContainer();
+
+
+            //For capturing KPI check out
+            //https://github.chrobinson.com/CHR/EnterpriseMonitoring.Logging/wiki/.NET-Full-Framework#kpi-designation
         }
 
 
