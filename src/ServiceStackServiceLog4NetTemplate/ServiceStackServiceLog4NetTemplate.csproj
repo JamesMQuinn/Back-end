@@ -64,8 +64,8 @@
     <Reference Include="CHRobinson.Shared.OperationContext, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\CHRobinson.Shared.OperationContext.1.0.0.4\lib\net40\CHRobinson.Shared.OperationContext.dll</HintPath>
     </Reference>
-    <Reference Include="EnterpriseMonitoring.Logging.NetFramework, Version=1.2.1.507, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EnterpriseMonitoring.Logging.NetFramework.1.2.1.507\lib\net452\EnterpriseMonitoring.Logging.NetFramework.dll</HintPath>
+    <Reference Include="EnterpriseMonitoring.Logging.NetFramework, Version=1.2.1.580, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseMonitoring.Logging.NetFramework.1.2.1.580\lib\net452\EnterpriseMonitoring.Logging.NetFramework.dll</HintPath>
     </Reference>
     <Reference Include="EnterpriseMonitoring.Logging.NetFramework.Log4Net, Version=1.0.3.2, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\EnterpriseMonitoring.Logging.NetFramework.Log4Net.1.0.3.2\lib\net452\EnterpriseMonitoring.Logging.NetFramework.Log4Net.dll</HintPath>
