@@ -72,7 +72,9 @@
   <ItemGroup>
     <Compile Include="IExampleInterface.cs" />
     <Compile Include="InterfacesAssemblyInfo.cs" />
+    <Compile Include="Managers\IReservationManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IReservationRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ServiceStackServiceLog4NetTemplate.ServiceModel\ServiceStackServiceLog4NetTemplate.ServiceModel.csproj">
@@ -80,10 +82,7 @@
       <Name>ServiceStackServiceLog4NetTemplate.ServiceModel</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Managers\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

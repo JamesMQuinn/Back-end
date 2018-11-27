@@ -14,7 +14,7 @@ namespace ServiceStackServiceLog4NetTemplate
             ServiceStack.Logging.LogManager.LogFactory = new ServiceStack.Logging.Log4Net.Log4NetFactory();
             
             // Set our LogFactory
-            CHRobinson.Enterprise.Logging.LogManager.LogFactory = new CHRobinson.Enterprise.Logging.Log4Net.Log4NetFactory(true);
+            //CHRobinson.Enterprise.Logging.LogManager.LogFactory = new CHRobinson.Enterprise.Logging.Log4Net.Log4NetFactory(true);
             
             log4net.GlobalContext.Properties["AppName"] = "ServiceStackServiceLog4NetTemplate";
             

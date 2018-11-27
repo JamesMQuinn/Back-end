@@ -1,4 +1,5 @@
-using CHR.ServiceStack.Plugins;
+//using CHR.ServiceStack.Plugins;
+//Removed this beause the directions below didn't seem to work.
 using Funq;
 using ServiceStack;
 using ServiceStack.Api.Swagger;
@@ -37,7 +38,7 @@ namespace ServiceStackServiceLog4NetTemplate
             //wiki for enterprise monitoring servicestack extensions
             //https://github.chrobinson.com/CHR/EnterpriseMonitoring.Logging/wiki/ServiceStack
             //wire in correlation for adding header, IRequest container for capturing routing, and expection capturing for service & validation errors for the enterprise monitoring logging sdk.
-            this.AddCorrelationLogging().AddServiceExceptionLogging().AddIRequestToContainer();
+            //this.AddCorrelationLogging().AddServiceExceptionLogging().AddIRequestToContainer();
 
 
             //For capturing KPI check out
@@ -50,7 +51,7 @@ namespace ServiceStackServiceLog4NetTemplate
             Plugins.Add(new ValidationFeature());
             Plugins.Add(new PostmanFeature());
             Plugins.Add(new SwaggerFeature());
-            Plugins.Add(new HealthCheckFeature(container));
+            //Plugins.Add(new HealthCheckFeature(container));
         }
 
     }

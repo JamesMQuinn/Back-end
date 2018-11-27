@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CHR.ServiceStack.Plugins.Models.HealthCheckFeature;
+//using CHR.ServiceStack.Plugins.Models.HealthCheckFeature;
 using ServiceStack;
 
 namespace ServiceStackServiceLog4NetTemplate.Tests.AcceptanceTests
@@ -36,12 +36,12 @@ namespace ServiceStackServiceLog4NetTemplate.Tests.AcceptanceTests
         [TestMethod, TestCategory("AutomatedAcceptance")]
         public void CheckServiceHealth_ShouldBeHealthy()
         {
-            HealthCheckRequest request = new HealthCheckRequest();
+            //HealthCheckRequest request = new HealthCheckRequest();
 
             Console.WriteLine($"Calling Health Check...");
             try
             {
-                _jsonClient.Get(request);
+            //    _jsonClient.Get(request);
             }
             catch (WebServiceException ex)
             {

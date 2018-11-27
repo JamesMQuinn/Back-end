@@ -46,6 +46,7 @@
   <ItemGroup>
     <Reference Include="CHR.ServiceStack.Plugins, Version=1.0.0.86, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\CHR.ServiceStack.Plugins.1.0.0.86\lib\net452\CHR.ServiceStack.Plugins.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="CHR.ServiceStack.Plugins.ServiceDefinition, Version=1.0.0.86, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\CHR.ServiceStack.Plugins.1.0.0.86\lib\net452\CHR.ServiceStack.Plugins.ServiceDefinition.dll</HintPath>
@@ -165,6 +166,7 @@
     <Content Include="Web.config.token">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="libman.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -197,6 +199,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
